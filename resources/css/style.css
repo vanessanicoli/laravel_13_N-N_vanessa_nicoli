@@ -1,3 +1,148 @@
-h1 {
-    color: red;
+/* COLORS */
+:root {
+    --d: rgb(60, 21, 24);
+    --m: rgb(192, 132, 151);
+    --l: rgb(235, 201, 213);
+}
+
+.bg-d {
+    background-color: var(--d);
+}
+
+.text-d {
+    color: var(--d);
+}
+
+.bg-m {
+    background-color: var(--m);
+}
+
+.text-m {
+    color: var(--m);
+}
+
+.bg-l {
+    background-color: var(--l);
+}
+
+.text-l {
+    color: var(--l);
+}
+
+.text-shadow-d {
+    text-shadow: -3px 3px 3px var(--d);
+}
+
+.text-shadow-l {
+    text-shadow: -3px 3px 3px var(--l);
+}
+
+body {
+    background-color: var(--m);
+    color: var(--l);
+}
+
+/* HOMEPAGE */
+.btn-home {
+    background-color: var(--d);
+    color: var(--l);
+    outline: 3px solid var(--l);
+    width: 250px;
+    height: 8vh;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-home:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: var(--d);
+    outline: 3px solid var(--d);
+}
+
+/* FORM */
+.form-custom {
+    background: linear-gradient(180deg, rgba(60, 21, 24, 0.8) 50%, rgba(60, 21, 24, 1)) 100%, url('../media/background.jpg');
+    background-repeat: no-repeat;
+    border: 3px solid var(--l);
+    border-radius: 10px;
+}
+
+.form-control {
+    background-color: var(--l);
+    color: var(--d);
+}
+
+.form-control:focus {
+    background-color: var(--l);
+    color: var(--d);
+    box-shadow: none;
+}
+
+.form-label {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-check-input {
+    background-color: var(--l);
+    border-color: var(--l);
+}
+
+.form-check-input:checked {
+    background-color: var(--m);
+    border-color: var(--m);
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.btn-form {
+    background-color: var(--m);
+    color: var(--l);
+    outline: 3px solid var(--l);
+    width: 250px;
+    height: 8vh;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-form:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: var(--m);
+    outline: 3px solid var(--m);
+}
+
+/* ARTICLE - SHOW */
+.bg-custom {
+    background: linear-gradient(180deg, rgba(60, 21, 24, 0.8) 50%, rgba(60, 21, 24, 1)) 100%, url('../media/background.jpg');
+    background-repeat: no-repeat;
+    border: 3px solid var(--l);
+    border-radius: 10px;
+}
+
+.img-container {
+    width: 550px;
+    /* width: 100%; */
+    aspect-ratio: 3/2;
+    overflow: hidden;
+}
+
+.img-custom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }

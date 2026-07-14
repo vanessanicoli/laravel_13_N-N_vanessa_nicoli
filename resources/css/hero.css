@@ -1,0 +1,6 @@
+.hero-custom {
+    height: 50vh;
+    color: var(--d);
+    background: linear-gradient(180deg, rgba(192, 132, 151, 0.6) 50%, rgba(192, 132, 151, 1)) 100%, url('../media/background.jpg');
+    background-repeat: no-repeat;
+}

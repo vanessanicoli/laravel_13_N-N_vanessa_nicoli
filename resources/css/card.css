@@ -1,0 +1,30 @@
+.card-custom {
+    width: 320px;
+    background-color: var(--l);
+    color: var(--d);
+    border: 3px solid var(--d);
+    box-shadow: -2px 5px 5px rgba(60, 21, 24, 0.6);
+}
+
+.card-body {
+    border-top: 2px solid var(--d);
+}
+
+.btn-card {
+    background-color: var(--d);
+    color: var(--l);
+    outline: 3px solid var(--l);
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-card:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: var(--d);
+    outline: 3px solid var(--d);
+}
